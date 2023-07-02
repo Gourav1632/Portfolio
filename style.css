@@ -53,8 +53,8 @@ span{
     flex-direction: column;
 }
 #profile-pic{
-    height: 180px;
-    width: 180px;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
 }
 .about h2{
@@ -157,10 +157,17 @@ a{
 
 @media (max-width: 768px ){
     .intro h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .intro h2{
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+    #profile-pic{
+        height: 6rem;
+        width: 6rem;
+    }
+    .skill-images{
+        margin-right: 0px;
     }
     .skills > div{
         flex-direction: column;
