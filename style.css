@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Mono', monospace;
+}
+hr{
+    border: dotted #9BA4B5 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+}
+.heading{
+    color: #5C469C
+}
+
+/* background */
+.container{
+    position: relative;
+    text-align: center;
+}
+span{
+    color: #FF6D60;
+}
+.intro{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+.intro h1{
+    font-family:'Dancing Script', cursive;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 15px;
+}
+.intro h2{
+    font-family: 'PT Mono', monospace;
+    font-size: 3rem;
+    color: #F7D060;
+}
+
+
+/* About */
+.about{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#profile-pic{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.about h2{
+    margin: 40px 0px;
+    font-size: 2rem;
+}
+#about-me{
+    width: 30%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Skills */
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-images{
+    float: left;
+    margin-right: 20px;
+}
+.skills h2{
+    margin: 40px 0px;
+    font-size: 2rem;
+}
+#skill1 >h3{
+    margin-bottom: 20px;
+}
+#skill2 >h3{
+    margin-bottom: 20px;
+}
+.skills > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skill1{
+    width: 30rem;
+}
+#skill2{
+    width: 30rem;
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact >h2{
+    font-size: 2rem;
+    margin: 40px 0px;
+}
+.contact >p{
+    margin: 0px 30px;
+    text-align: center;
+}
+.contact-button{
+    
+    background-color: #D4ADFC;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+
+}
+.contact-button:hover{
+    background-color: #5C469C;
+}
+
+/* Footer */
+.footer{
+    padding: 40px 0px;
+    height: 6rem ;
+    width: 100%;
+    background-color: #5C469C;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer p{
+    text-align: center;
+    margin: 40px;
+    color: white;
+}
+
+@media (max-width: 768px ){
+    .intro h1{
+        font-size: 3rem;
+    }
+    .intro h2{
+        font-size: 2rem;
+    }
+    .skills > div{
+        flex-direction: column;
+    }
+    #skill1{
+        width: 70%;
+        margin-top: 20px;
+        
+    }
+    #skill2{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .contact >p{
+        width: 70%;
+    }
+    #about-me{
+        width: 70%;
+    }
+}
+
